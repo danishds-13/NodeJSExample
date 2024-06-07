@@ -39,3 +39,28 @@ placeAnOrder(1);
 placeAnOrder(2);
 placeAnOrder(3);
 placeAnOrder(4);
+
+var Bucky = {
+    favFood: "bacon",
+    favMovie: "chappie"
+};
+
+var Person = Bucky;
+Person.favFood="salad";
+console.log(Bucky.favFood);
+
+//there is a difference between == and === this is to where the both equals shows that the statement is true and the three === shows that its a false statement 
+var Bucky = {
+    printFirstName: function(){
+        console.log("\n I am working ");
+        console.log(this == global);
+    }
+};
+Bucky.printFirstName();
+
+//the default calling context is global 
+function doSomethingWorthLess(){
+    console.log("\n I am wothless");
+    console.log("this == global ");
+}
+doSomethingWorthLess();
