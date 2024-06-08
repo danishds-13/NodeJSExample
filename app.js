@@ -64,3 +64,22 @@ function doSomethingWorthLess(){
     console.log("this == global ");
 }
 doSomethingWorthLess();
+
+//prototype 
+function User{}{
+    this.name="";
+    this.life=100;
+    this.giveLife = function giveLife(targetPlayer){
+        targetPlayer.life += 1;
+        console.log(this.name + "gave 1 life to " + targetPlayer.name);
+    }
+}
+
+var Bucky = new User();
+var wendy = new User();
+Bucky.name = "Bucky";
+wendy.name = "Wendy";
+
+Bucky.giveLife{wendy};
+console.log{"bucky" + Bucky.life};
+console.log{"wendy" + wendy.life};
