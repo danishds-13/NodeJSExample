@@ -83,3 +83,18 @@ wendy.name = "Wendy";
 Bucky.giveLife{wendy};
 console.log{"bucky" + Bucky.life};
 console.log{"wendy" + wendy.life};
+
+//you can add the fucntions to the objects
+User.prototype.uppercut = function uppercut (targetPlayer){
+    targetPlayer.life -= 3;
+    console.log(this.name + "just uppercutted " + targetPlayer.name);
+};
+
+wendy.uppercut(Bucky);
+console.log("bucky" +Bucky.life);
+console.log("wendy" +wendy.life);
+
+//you canadd properties to all objects 
+User.prototype.magic = 60;
+console.log(Bucky.magic);
+console.log(wendy.magic);
