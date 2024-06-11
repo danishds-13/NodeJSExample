@@ -98,3 +98,7 @@ console.log("wendy" +wendy.life);
 User.prototype.magic = 60;
 console.log(Bucky.magic);
 console.log(wendy.magic);
+
+// there was another file made called the movies.js that has the function we are trying to import it here 
+var movies = require('/movies');
+movies.avatar();
