@@ -1,9 +1,21 @@
-function printAvatar(){
-    console.log("Avatar");
-}
+module.exports = {
 
-function printChappie(){
-    console.log("chappie");
-}
+    printAvatar: function{} {
+        console.log("Avatar");
+    },
+    printChappie: function{}{
+        console.log("chappie");
+    },
+    favMovie: "the movie"
+};
 
-module.exports.avatar=printAvatar;
+//function printAvatar(){
+//    console.log("Avatar");
+//}
+
+//function printChappie(){
+//    console.log("chappie");
+//}
+
+module.exports.avatar = printAvatar;
+module.exports.chappe = printChappie;
