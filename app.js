@@ -103,3 +103,7 @@ console.log(wendy.magic);
 var movies = require('/movies');
 movies.avatar();
 console.log(movies);
+
+//Module 10 - shared state of the module 
+require('./chappie');
+require('./bucky');

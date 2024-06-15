@@ -19,3 +19,8 @@ module.exports = {
 
 module.exports.avatar = printAvatar;
 module.exports.chappe = printChappie;
+
+//module 10 - shared state of modules
+module.exports = {
+    favMovie: ""
+};
