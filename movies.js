@@ -24,3 +24,10 @@ module.exports.chappe = printChappie;
 module.exports = {
     favMovie: ""
 };
+
+//object factory (each module can have its own description thats is why we use this method this is another way of using the modules from the previos way)
+module.exports = function () {
+    return{
+        favMovie: ""
+    }
+}
