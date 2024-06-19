@@ -107,3 +107,18 @@ console.log(movies);
 //Module 10 - shared state of the module 
 require('./chappie');
 require('./bucky');
+
+//Core modules
+var fs = require('fs');
+
+fs.writeFileSync("Corn.txt","Corn is good and is life ");       //this will create a file called corn.txt and write into it
+console.log(fs.readFileSync("corn.txt").toString());            // this is to read a file that is there but then we use the tostring function for this to convert it to the text 
+//--------------------------------------------------------------------------
+var path = require('path');
+var webstiteHome = "Desktop/Bucky//thenewboston/index.html";
+var websiteAbout = "Desktop/Bucky//thenewboston/about.html";
+
+console.log(path.normalize(webstiteHome));
+console.log(path.dirname(websiteAbout));
+console.log(path.basename(websiteAbout));
+console.log(path.extname(websiteAbout));
